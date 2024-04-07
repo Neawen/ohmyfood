@@ -5,19 +5,53 @@
 //------Fichiers CSS---------------------------------------
 @import 'modules/header.scss';
 
-//-------Général------------------------------------------
+//-------Variables générales----------------------------------
 $police-titres-logo: shrikhand;
 $police-texte: Roboto;
 $couleur-principale: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 
-// ---------------------------------------------------------
+// --------Style Général--------------------------------------
 * {
     font-family: $police-texte;
 }
 
 body {
     margin: 0;
+}
+
+.bouton {
+    background: linear-gradient(-180deg, mix($couleur-secondaire, $couleur-principale, 80%), mix($couleur-secondaire, $couleur-principale, 15%));
+    color: white;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    height: 3.1rem;
+    width: 58%;
+    border: none;
+    font-size: 1rem;
+}
+
+// -----------------------------------------------------------
+.sectionAccueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F6F6F6;
+    padding-bottom: 3.5rem;
+    width: 100%;
+
+    &__titre {
+        margin: 2.5rem 3rem 1rem 3rem;
+    }
+
+    &__texte {
+        color: #353535;
+        margin: 0.5rem 2rem 1rem 2rem;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
 }
 
