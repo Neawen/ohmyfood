@@ -64,4 +64,53 @@ body {
   margin: 0.5rem 2rem 1rem 2rem;
   font-size: 1.1rem;
   font-weight: 300;
+}
+
+.sectionFonctionnement {
+  margin: 3rem 1rem;
+}
+.sectionFonctionnement .conteneurFonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.sectionFonctionnement .conteneurFonctionnement__conteneurCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.sectionFonctionnement .conteneurFonctionnement__conteneurCard__numero {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  left: 0.6rem;
+  top: 0.1rem;
+}
+.sectionFonctionnement .conteneurFonctionnement__conteneurCard__card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #F6F6F6;
+  border-radius: 1.2rem;
+  padding: 0 1.9rem;
+  box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.15);
+  width: 95%;
+  height: 4.5rem;
+}
+.sectionFonctionnement .conteneurFonctionnement__conteneurCard__card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.sectionFonctionnement .conteneurFonctionnement__conteneurCard__card__logoMobile {
+  width: 0.8rem;
+  height: 1.2rem;
+}
+.sectionFonctionnement .conteneurFonctionnement__conteneurCard__card__logoMenu {
+  width: 1rem;
+  height: 1rem;
+}
+.sectionFonctionnement .conteneurFonctionnement__conteneurCard__card__logoResto {
+  width: 1.1rem;
+  height: 1.1rem;
 }/*# sourceMappingURL=style.css.map */
