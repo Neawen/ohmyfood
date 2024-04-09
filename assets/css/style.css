@@ -27,26 +27,6 @@
   height: 1rem;
 }
 
-* {
-  font-family: Roboto;
-}
-
-body {
-  margin: 0;
-}
-
-.bouton {
-  background: linear-gradient(-180deg, #e972da, #a35bdc);
-  color: white;
-  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
-  border-radius: 1.5rem;
-  cursor: pointer;
-  height: 3.1rem;
-  width: 58%;
-  border: none;
-  font-size: 1rem;
-}
-
 .sectionAccueil {
   display: flex;
   flex-direction: column;
@@ -113,4 +93,87 @@ body {
 .sectionFonctionnement .conteneurFonctionnement__conteneurCard__card__logoResto {
   width: 1.1rem;
   height: 1.1rem;
+}
+
+.sectionRestaurants {
+  padding: 2rem 1rem 5rem 1rem;
+  background-color: #F6F6F6;
+}
+.sectionRestaurants h2 {
+  margin-bottom: 0.5rem;
+}
+.sectionRestaurants__conteneur {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sectionRestaurants__conteneur__conteneurParDeux {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sectionRestaurants__conteneur__conteneurParDeux .card {
+  height: 15.6rem;
+  width: 100%;
+  border-radius: 0.9rem;
+  background-color: white;
+}
+.sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto {
+  position: relative;
+}
+.sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__texte {
+  position: absolute;
+  left: 73%;
+  bottom: 70%;
+  background-color: #99E2D0;
+  padding: 0.4rem 0.9rem;
+  color: #008766;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 0.1rem;
+}
+.sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__photo, .sectionRestaurants__conteneur__conteneurParDeux .card__photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.9rem 0.9rem 0 0;
+  height: 11rem;
+  width: 100%;
+}
+.sectionRestaurants__conteneur__conteneurParDeux .card__contenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem 0 0.8rem;
+  align-items: center;
+}
+.sectionRestaurants__conteneur__conteneurParDeux .card__contenu h3 {
+  margin: 0.5em 0 0.3rem 0;
+  font-size: 1.1rem;
+}
+.sectionRestaurants__conteneur__conteneurParDeux .card__contenu p {
+  margin: 0;
+  font-weight: 300;
+}
+.sectionRestaurants__conteneur__conteneurParDeux .card__contenu img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+* {
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+}
+
+.bouton {
+  background: linear-gradient(-180deg, #e972da, #a35bdc);
+  color: white;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  height: 3.1rem;
+  width: 58%;
+  border: none;
+  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */
