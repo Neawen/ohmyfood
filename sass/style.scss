@@ -34,5 +34,11 @@ body {
     width: 58%;
     border: none;
     font-size: 1rem;
+    transition: opacity 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+
+    &:hover {
+        opacity: 0.85;
+        box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.4);
+    }
 }
 
