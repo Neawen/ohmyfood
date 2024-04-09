@@ -112,6 +112,10 @@
   flex-direction: column;
   gap: 1rem;
 }
+.sectionRestaurants__conteneur__conteneurParDeux a {
+  text-decoration: none;
+  color: black;
+}
 .sectionRestaurants__conteneur__conteneurParDeux .card {
   height: 15.6rem;
   width: 100%;
