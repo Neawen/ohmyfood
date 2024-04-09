@@ -1,0 +1,39 @@
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 1rem 1.5rem;
+
+    h2 {
+        margin-top: 0;
+        font-family: $police-titres-logo;
+        font-size: 1.2rem;
+    }
+
+    &__conteneur {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &__liens {
+            text-decoration: none;
+            color: white;
+        }
+
+        &__liens--alignement {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            img {
+                width: 0.6rem;
+                height: 0.9rem;
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
+    }
+}
