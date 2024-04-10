@@ -165,21 +165,6 @@
   margin: 0;
   font-weight: 300;
 }
-.sectionRestaurants__conteneur__conteneurParDeux .card__contenu__bouton {
-  border: none;
-  background-color: white;
-  cursor: pointer;
-  background-image: url("../images/Icon/like.png");
-  height: 1.6rem;
-  width: 1.6rem;
-  background-size: 1.3rem 1.3rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.sectionRestaurants__conteneur__conteneurParDeux .card__contenu__bouton:hover {
-  animation: liked 0.1s ease-in-out;
-  background-image: url("../images/Icon/liked.png");
-}
 
 .footer {
   background-color: #353535;
@@ -238,4 +223,20 @@ body {
 .bouton:hover {
   opacity: 0.85;
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.4);
+}
+
+.bouton__coeur {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  background-image: url("../images/Icon/like.png");
+  height: 1.6rem;
+  width: 1.6rem;
+  background-size: 1.3rem 1.3rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bouton__coeur:hover {
+  animation: liked 0.1s ease-in-out;
+  background-image: url("../images/Icon/liked.png");
 }/*# sourceMappingURL=style.css.map */
