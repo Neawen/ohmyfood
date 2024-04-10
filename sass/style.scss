@@ -9,6 +9,17 @@ $couleur-principale: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 
+// --------keyframes--------------------------------------
+// Coeur remplissage
+@keyframes liked {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 //------Fichiers CSS---------------------------------------
 @import 'modules/header.scss';
 @import 'main.scss';
