@@ -5,6 +5,21 @@
 
     &__logo {
         padding: 0.8rem 0 0.5rem 0;
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__logo--ordi {
+        display: none;
+
+        @media (min-width: 1024px) {
+            display: block;
+            width: 12.5rem;
+            height: 2.1rem;
+            padding: 1.9rem 0 1.9rem 0;
+        }
     }
 
     &__section {
@@ -16,6 +31,10 @@
             0 -0.1rem 0.2rem rgba(0, 0, 0, 0.2);
         width: 100%;
         justify-content: center;
+
+        @media (min-width: 1024px) {
+            box-shadow: none;
+        }
 
         & h2 {
             font-size: 1rem;
