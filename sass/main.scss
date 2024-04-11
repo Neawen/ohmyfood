@@ -69,10 +69,25 @@
 .sectionFonctionnement {
     margin: 3rem 1rem;
 
+    @media (min-width: 1024px) {
+        margin: 3rem 11.2rem;
+    }
+
+    h2 {
+        @media (min-width:1024px) {
+            margin-bottom: 1.6rem;
+        }
+    }
+
     .conteneurFonctionnement {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            gap: 1rem;
+        }
 
         &__conteneurCard {
             display: flex;
@@ -105,8 +120,8 @@
                 }
 
                 &__logoMobile {
-                    width: 0.8rem;
-                    height: 1.2rem;
+                    width: 0.9rem;
+                    height: 1.3rem;
                 }
 
                 &__logoMenu {
@@ -115,8 +130,8 @@
                 }
 
                 &__logoResto {
-                    width: 1.1rem;
-                    height: 1.1rem;
+                    width: 1.2rem;
+                    height: 1.2rem;
                 }
             }
         }
