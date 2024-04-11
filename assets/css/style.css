@@ -8,6 +8,37 @@
     transform: scale(1);
   }
 }
+@keyframes chargement {
+  0% {
+    transform: scaleX(0);
+  }
+  25% {
+    transform: scaleX(0.2);
+  }
+  60% {
+    transform: scaleX(0.5);
+  }
+  90% {
+    transform: scaleX(0.75);
+  }
+  85%, 100% {
+    background-color: #a35bdc;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes invisible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -33,6 +64,34 @@
 .header__section__logo {
   width: 0.7rem;
   height: 1rem;
+}
+
+.conteneurChargement {
+  height: 1080px;
+  padding: 3rem;
+  animation: invisible 0.5s 2.5s ease-in-out forwards;
+}
+.conteneurChargement h2 {
+  margin: 0.1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #353535;
+}
+.conteneurChargement .progress {
+  border: #EAEAEA 2px solid;
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 0.2rem;
+  animation: invisible 0.5s 2.5s ease-in-out forwards;
+}
+.conteneurChargement .progress__bar {
+  background-color: #e972da;
+  height: 1rem;
+  border-radius: 1rem;
+  animation: chargement 2s 0.5s ease-in-out both;
+  transform-origin: left;
 }
 
 .sectionAccueil {

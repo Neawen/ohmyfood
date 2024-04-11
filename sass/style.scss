@@ -10,12 +10,56 @@ $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 
 // ------Keyframes---------------------------------------------
+// animation pour liker
 @keyframes liked {
-    0%{
+    0% {
         transform: scale(0);
     }
-    100%{
+
+    100% {
         transform: scale(1);
+    }
+}
+
+// animation de chargement
+@keyframes chargement {
+    0% {
+        transform: scaleX(0);
+    }
+
+    25% {
+        transform: scaleX(0.2);
+    }
+
+    60% {
+        transform: scaleX(0.5);
+    }
+
+    90% {
+        transform: scaleX(0.75);
+    }
+
+    85%,
+    100% {
+        background-color: mix($couleur-secondaire, $couleur-principale, 15%);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+// Animation pour cacher la section de la barre de chargement 
+@keyframes invisible {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -52,6 +96,7 @@ body {
     }
 }
 
+// bouton pour liker 
 .bouton__coeur {
     border: none;
     background-color: white;
@@ -68,4 +113,3 @@ body {
         background-image: url('../images/Icon/liked.png');
     }
 }
-
