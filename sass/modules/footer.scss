@@ -6,18 +6,30 @@
     @media (min-width:1024px) {
         display: flex;
         flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 5.8rem;
+        padding: 3.2rem 3.8rem 1.5rem 1.5rem;
     }
 
     h2 {
         margin-top: 0;
         font-family: $police-titres-logo;
         font-size: 1.2rem;
+
+        @media (min-width:1024px) {
+            margin: 0;
+        }
     }
 
     &__conteneurInfos {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+
+        @media (min-width:1024px) {
+            flex-direction: row;
+            gap: 3rem;
+        }
 
         a {
             text-decoration: none;
@@ -29,8 +41,13 @@
             flex-direction: column;
             gap: 0.5rem;
 
+            @media (min-width:1024px) {
+                flex-direction: row;
+            }
+
             .liensLogo {
                 display: flex;
+                align-items: center;
                 gap: 0.5rem;
 
                 img {
@@ -50,6 +67,11 @@
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
+
+            @media (min-width:1024px) {
+                flex-direction: row;
+                gap: 1rem;
+            }
         }
     }
 }
