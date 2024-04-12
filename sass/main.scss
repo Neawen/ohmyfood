@@ -1,35 +1,3 @@
-// ---------bar de chargement----------------------------------
-.conteneurChargement {
-    height: 1080px;
-    padding: 3rem;
-    animation: invisible 0.5s 2.5s ease-in-out forwards;
-
-    h2 {
-        margin: 0.1rem;
-        font-weight: 400;
-        font-size: 1.2rem;
-        text-align: center;
-        color: #353535;
-    }
-
-    .progress {
-        border: #EAEAEA 2px solid;
-        width: 100%;
-        border-radius: 1rem;
-        margin-top: 2rem;
-        padding: 0.2rem;
-        animation: invisible 0.5s 2.5s ease-in-out forwards;
-
-        &__bar {
-            background-color: mix($couleur-secondaire, $couleur-principale, 80%);
-            height: 1rem;
-            border-radius: 1rem;
-            animation: chargement 2s 0.5s ease-in-out both;
-            transform-origin: left;
-        }
-    }
-}
-
 // ------Première section----------------------------------------
 .sectionAccueil {
     display: flex;

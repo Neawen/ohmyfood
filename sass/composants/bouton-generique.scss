@@ -1,0 +1,22 @@
+
+.bouton {
+    background: linear-gradient(-180deg, mix($couleur-secondaire, $couleur-principale, 80%), mix($couleur-secondaire, $couleur-principale, 15%));
+    color: white;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    height: 3.1rem;
+    width: 58%;
+    border: none;
+    font-size: 1rem;
+    transition: opacity 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+
+    @media (min-width: 1024px) {
+        width: 13.6rem;
+    }
+
+    &:hover {
+        opacity: 0.85;
+        box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.4);
+    }
+}

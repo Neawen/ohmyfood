@@ -1,0 +1,27 @@
+// animation barre de chargement
+@keyframes chargement {
+    0% {
+        transform: scaleX(0);
+    }
+
+    25% {
+        transform: scaleX(0.2);
+    }
+
+    60% {
+        transform: scaleX(0.5);
+    }
+
+    90% {
+        transform: scaleX(0.75);
+    }
+
+    85%,
+    100% {
+        background-color: mix($couleur-secondaire, $couleur-principale, 15%);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}

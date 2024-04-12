@@ -1,0 +1,13 @@
+// Animation pour cacher la section de la barre de chargement 
+@keyframes invisible {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
