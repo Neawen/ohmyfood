@@ -44,7 +44,7 @@
     h2 {
         margin: 2rem 1rem 1.6rem 1rem;
 
-        @media (min-width:1024px) {
+        @media (min-width:1440px) {
             margin: 2rem 11.2rem 1.6rem 11.2rem;
         }
     }
@@ -54,9 +54,13 @@
         flex-direction: column;
         gap: 1.5rem;
 
-        @media (min-width: 1024px) {
+        @media (min-width:1024px) {
             flex-direction: row;
             gap: 0.5rem;
+            margin-right: 1.3rem;
+        }
+
+        @media (min-width: 1440px) {
             margin-left: 10rem;
             margin-right: 13.2rem;
         }
@@ -124,7 +128,7 @@
     padding: 2rem 1rem 5rem 1rem;
     background-color: #F6F6F6;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1440px) {
         padding: 0.5rem 11.2rem 2rem 11.2rem;
     }
 
@@ -153,6 +157,10 @@
             @media (min-width:1024px) {
                 flex-direction: row;
                 width: 100%;
+                gap: 3rem;
+            }
+
+            @media (min-width:1440px) {
                 gap: 6.2rem;
             }
 

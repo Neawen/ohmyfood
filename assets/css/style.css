@@ -294,7 +294,7 @@ body {
 .sectionFonctionnement h2 {
   margin: 2rem 1rem 1.6rem 1rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .sectionFonctionnement h2 {
     margin: 2rem 11.2rem 1.6rem 11.2rem;
   }
@@ -308,6 +308,11 @@ body {
   .sectionFonctionnement .conteneurFonctionnement {
     flex-direction: row;
     gap: 0.5rem;
+    margin-right: 1.3rem;
+  }
+}
+@media (min-width: 1440px) {
+  .sectionFonctionnement .conteneurFonctionnement {
     margin-left: 10rem;
     margin-right: 13.2rem;
   }
@@ -368,7 +373,7 @@ body {
   padding: 2rem 1rem 5rem 1rem;
   background-color: #F6F6F6;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .sectionRestaurants {
     padding: 0.5rem 11.2rem 2rem 11.2rem;
   }
@@ -400,6 +405,11 @@ body {
   .sectionRestaurants__conteneur__conteneurParDeux {
     flex-direction: row;
     width: 100%;
+    gap: 3rem;
+  }
+}
+@media (min-width: 1440px) {
+  .sectionRestaurants__conteneur__conteneurParDeux {
     gap: 6.2rem;
   }
 }
