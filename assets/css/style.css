@@ -151,16 +151,19 @@
 }
 
 .sectionFonctionnement {
-  margin: 3rem 1rem;
+  margin-bottom: 5rem;
 }
 @media (min-width: 1024px) {
   .sectionFonctionnement {
-    margin: 3rem 11.2rem;
+    margin-bottom: 3rem;
   }
+}
+.sectionFonctionnement h2 {
+  margin: 2rem 1rem 1.6rem 1rem;
 }
 @media (min-width: 1024px) {
   .sectionFonctionnement h2 {
-    margin-bottom: 1.6rem;
+    margin: 2rem 11.2rem 1.6rem 11.2rem;
   }
 }
 .sectionFonctionnement .conteneurFonctionnement {
@@ -171,13 +174,16 @@
 @media (min-width: 1024px) {
   .sectionFonctionnement .conteneurFonctionnement {
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin-left: 10rem;
+    margin-right: 13.2rem;
   }
 }
 .sectionFonctionnement .conteneurFonctionnement__conteneurCard {
   display: flex;
   align-items: center;
   width: 100%;
+  margin-left: 0.5rem;
 }
 .sectionFonctionnement .conteneurFonctionnement__conteneurCard__numero {
   width: 1.5rem;
@@ -194,8 +200,13 @@
   border-radius: 1.2rem;
   padding: 0 1.9rem;
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.15);
-  width: 95%;
+  width: 70%;
   height: 4.5rem;
+}
+@media (min-width: 1024px) {
+  .sectionFonctionnement .conteneurFonctionnement__conteneurCard__card {
+    width: 90%;
+  }
 }
 .sectionFonctionnement .conteneurFonctionnement__conteneurCard__card h3 {
   font-size: 1rem;

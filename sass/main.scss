@@ -67,15 +67,17 @@
 
 // ------Deuxième section------------------------------------------
 .sectionFonctionnement {
-    margin: 3rem 1rem;
+    margin-bottom: 5rem;
 
-    @media (min-width: 1024px) {
-        margin: 3rem 11.2rem;
+    @media (min-width:1024px) {
+        margin-bottom: 3rem;
     }
 
     h2 {
+        margin: 2rem 1rem 1.6rem 1rem;
+
         @media (min-width:1024px) {
-            margin-bottom: 1.6rem;
+            margin: 2rem 11.2rem 1.6rem 11.2rem;
         }
     }
 
@@ -86,13 +88,16 @@
 
         @media (min-width: 1024px) {
             flex-direction: row;
-            gap: 1rem;
+            gap: 0.5rem;
+            margin-left: 10rem;
+            margin-right: 13.2rem;
         }
 
         &__conteneurCard {
             display: flex;
             align-items: center;
             width: 100%;
+            margin-left: 0.5rem;
 
             &__numero {
                 width: 1.5rem;
@@ -110,8 +115,12 @@
                 border-radius: 1.2rem;
                 padding: 0 1.9rem;
                 box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.15);
-                width: 95%;
+                width: 70%;
                 height: 4.5rem;
+
+                @media (min-width:1024px) {
+                    width: 90%;
+                }
 
                 & h3 {
                     font-size: 1rem;
