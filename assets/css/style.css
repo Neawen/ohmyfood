@@ -90,6 +90,13 @@ body {
   padding: 3rem;
   animation: invisible 0.5s 2.5s ease-in-out forwards;
 }
+@media (min-width: 1024px) {
+  .conteneurChargement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .conteneurChargement h2 {
   margin: 0.1rem;
   font-weight: 400;
@@ -104,6 +111,11 @@ body {
   margin-top: 2rem;
   padding: 0.2rem;
   animation: invisible 0.5s 2.5s ease-in-out forwards;
+}
+@media (min-width: 1024px) {
+  .conteneurChargement .progress {
+    width: 45%;
+  }
 }
 .conteneurChargement .progress__bar {
   background-color: #e972da;
@@ -324,6 +336,11 @@ body {
   width: 70%;
   height: 4.5rem;
 }
+@media (min-width: 768px) {
+  .sectionFonctionnement .conteneurFonctionnement__conteneurCard__card {
+    width: 85%;
+  }
+}
 @media (min-width: 1024px) {
   .sectionFonctionnement .conteneurFonctionnement__conteneurCard__card {
     width: 90%;
@@ -414,6 +431,11 @@ body {
   font-weight: 500;
   font-size: 0.8rem;
   border-radius: 0.1rem;
+}
+@media (min-width: 768px) {
+  .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__texte {
+    left: 87%;
+  }
 }
 @media (min-width: 1024px) {
   .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__texte {
