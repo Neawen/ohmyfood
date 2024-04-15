@@ -41,5 +41,7 @@
 
 //------Fichier CSS---------------------------------------
 // sections page principale
-@import 'main.scss';
+@import 'modules/main-section-accueil.scss';
+@import 'modules/main-section-fonctionnement.scss';
+@import 'modules/main-section-restaurants.scss';
 
