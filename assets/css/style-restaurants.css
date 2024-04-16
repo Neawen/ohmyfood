@@ -8,6 +8,28 @@ body {
   margin: 0;
 }
 
+.bouton {
+  background: linear-gradient(-180deg, #e972da, #a35bdc);
+  color: white;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  height: 3.1rem;
+  width: 58%;
+  border: none;
+  font-size: 1rem;
+  transition: opacity 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .bouton {
+    width: 13.6rem;
+  }
+}
+.bouton:hover {
+  opacity: 0.85;
+  box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.4);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -98,7 +120,7 @@ body {
 }
 
 .sectionPlats {
-  margin-top: 24rem;
+  margin-top: 23.9rem;
   padding: 0.8rem 0.8rem 1.9rem 0.8rem;
   background-color: #F6F6F6;
   display: flex;
@@ -138,4 +160,51 @@ body {
   font-weight: 700;
   color: #353535;
   margin: 0;
+}
+
+.sectionDesserts {
+  padding: 0.8rem 0.8rem 1.9rem 0.8rem;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.sectionDesserts h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0 0.4rem 0;
+}
+.sectionDesserts .bordure {
+  border-bottom: #99E2D0 solid 3px;
+  padding-bottom: 0.3rem;
+}
+.sectionDesserts .card {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.sectionDesserts .card__contenu__titre {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 0.3rem 0;
+}
+.sectionDesserts .card__contenu__texte {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0;
+}
+.sectionDesserts .card__contenu__prix {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #353535;
+  margin: 0;
+}
+.sectionDesserts__conteneurBouton {
+  margin: 1.5rem 0 0.4rem 0;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style-restaurants.css.map */

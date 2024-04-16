@@ -1,5 +1,4 @@
-.sectionPlats {
-    margin-top: 23.9rem;
+.sectionDesserts {
     @include section-resto;
     display: flex;
     flex-direction: column;
@@ -27,5 +26,11 @@
         &__contenu__prix {
             @include sectionResto-prixcard;
         }
+    }
+
+    &__conteneurBouton {
+        margin: 1.5rem 0 0.4rem 0;
+        display: flex;
+        justify-content: center;
     }
 }
