@@ -6,4 +6,93 @@
 
 body {
   margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1.2rem;
+  gap: 4rem;
+}
+.header__logo {
+  height: 2rem;
+  width: 9.8rem;
+  margin-top: 0.5rem;
+}
+
+.sectionPhoto {
+  position: relative;
+}
+.sectionPhoto__photo {
+  height: 17.1rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sectionEntrees {
+  border-radius: 2rem 2rem 0 0;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  background-color: #F6F6F6;
+  position: absolute;
+  top: 28%;
+  width: 93.2%;
+}
+.sectionEntrees__accueil {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.sectionEntrees__accueil__titre {
+  font-family: shrikhand;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.sectionEntrees__accueil__logo {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+.sectionEntrees button {
+  border: none;
+  background-color: #F6F6F6;
+  cursor: pointer;
+}
+.sectionEntrees__repas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.sectionEntrees__repas h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0 0.4rem 0;
+}
+.sectionEntrees__repas .bordure {
+  border-bottom: #99E2D0 solid 3px;
+  padding-bottom: 0.3rem;
+}
+.sectionEntrees__repas .card {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.sectionEntrees__repas .card__contenu__titre {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 0.3rem 0;
+}
+.sectionEntrees__repas .card__contenu__texte {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0;
+}
+.sectionEntrees__repas .card__contenu__prix {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #353535;
+  margin: 0;
 }/*# sourceMappingURL=style-restaurants.css.map */

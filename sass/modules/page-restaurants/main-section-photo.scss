@@ -1,0 +1,9 @@
+.sectionPhoto {
+    position: relative;
+    
+    &__photo {
+        height: 17.1rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}

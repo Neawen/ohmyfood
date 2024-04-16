@@ -1,0 +1,10 @@
+@mixin sectionResto-titres {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0 0 0.4rem 0;
+}
+
+@mixin bordure-titre($couleur-tertiaire) {
+    border-bottom: $couleur-tertiaire solid 3px;
+    padding-bottom: 0.3rem;
+}

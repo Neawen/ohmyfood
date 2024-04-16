@@ -10,5 +10,13 @@
 @import '../base/style-base.scss';
 
 
+// ----Mixin---------------------------------------------------------
+
+@import '../mixin/sectionResto-bgPadding.scss';
+@import '../mixin/sectionResto-titreBordure.scss';
+@import '../mixin/sectionResto-cardRepas.scss';
+
 // -----Modules---------------------------------------------
 @import '../modules/page-restaurants/header-restaurants.scss';
+@import '../modules/page-restaurants/main-section-photo.scss';
+@import '../modules/page-restaurants/section-entrees-restaurants.scss';
