@@ -1,0 +1,31 @@
+.sectionPlats {
+    margin-top: 24rem;
+    @include section-resto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    h2 {
+        @include sectionResto-titres;
+    }
+
+    .bordure {
+        @include bordure-titre($couleur-tertiaire);
+    }
+
+    .card {
+        @include format-card;
+
+        &__contenu__titre {
+            @include sectionResto-titrecard;
+        }
+
+        &__contenu__texte {
+            @include sectionResto-textecard;
+        }
+
+        &__contenu__prix {
+            @include sectionResto-prixcard;
+        }
+    }
+}
