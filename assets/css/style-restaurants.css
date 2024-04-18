@@ -30,6 +30,41 @@ body {
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.4);
 }
 
+.boutonCoeur {
+  cursor: pointer;
+  background-image: url("../images/Icon/like.png");
+  height: 1.6rem;
+  width: 1.6rem;
+  background-size: 1.3rem 1.3rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+}
+.boutonCoeur:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.boutonCoeur::after {
+  content: "";
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-image: url("../images/Icon/liked.png");
+  height: 1.6rem;
+  width: 1.6rem;
+  background-size: 1.5rem 1.4rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.1s ease-in-out, opacity 0.2s ease-in-out;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -69,15 +104,17 @@ body {
   font-family: shrikhand;
   font-size: 1.8rem;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+  text-overflow: ellipsis;
+  width: 100%;
 }
-.sectionEntrees__accueil__logo {
-  height: 1.3rem;
-  width: 1.3rem;
+.sectionEntrees__accueil__titre--width {
+  width: auto;
 }
-.sectionEntrees button {
-  border: none;
+.sectionEntrees__accueil__boutonCoeur--bg {
   background-color: #F6F6F6;
-  cursor: pointer;
 }
 .sectionEntrees__repas {
   display: flex;
@@ -93,6 +130,13 @@ body {
   border-bottom: #99E2D0 solid 3px;
   padding-bottom: 0.3rem;
 }
+.sectionEntrees__repas .card--overflow {
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+  text-overflow: ellipsis;
+  width: 100%;
+}
 .sectionEntrees__repas .card {
   background-color: white;
   border-radius: 1rem;
@@ -102,15 +146,28 @@ body {
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
+.sectionEntrees__repas .card__contenu {
+  width: 80%;
+}
 .sectionEntrees__repas .card__contenu__titre {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0 0 0.3rem 0;
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .sectionEntrees__repas .card__contenu__texte {
   font-size: 0.9rem;
   font-weight: 300;
   margin: 0;
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .sectionEntrees__repas .card__contenu__prix {
   font-size: 0.9rem;
@@ -145,15 +202,28 @@ body {
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
+.sectionPlats .card__contenu {
+  width: 80%;
+}
 .sectionPlats .card__contenu__titre {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0 0 0.3rem 0;
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .sectionPlats .card__contenu__texte {
   font-size: 0.9rem;
   font-weight: 300;
   margin: 0;
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .sectionPlats .card__contenu__prix {
   font-size: 0.9rem;
@@ -187,15 +257,28 @@ body {
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
+.sectionDesserts .card__contenu {
+  width: 80%;
+}
 .sectionDesserts .card__contenu__titre {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0 0 0.3rem 0;
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .sectionDesserts .card__contenu__texte {
   font-size: 0.9rem;
   font-weight: 300;
   margin: 0;
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .sectionDesserts .card__contenu__prix {
   font-size: 0.9rem;
@@ -207,4 +290,79 @@ body {
   margin: 1.5rem 0 0.4rem 0;
   display: flex;
   justify-content: center;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 5.8rem;
+    padding: 3.2rem 3.8rem 1.5rem 1.5rem;
+  }
+}
+.footer h2 {
+  margin-top: 0;
+  font-family: shrikhand;
+  font-size: 1.2rem;
+}
+@media (min-width: 1024px) {
+  .footer h2 {
+    margin: 0;
+  }
+}
+.footer__conteneurInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .footer__conteneurInfos {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+.footer__conteneurInfos a {
+  text-decoration: none;
+  color: white;
+}
+.footer__conteneurInfos__conteneursLiensLogo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .footer__conteneurInfos__conteneursLiensLogo {
+    flex-direction: row;
+  }
+}
+.footer__conteneurInfos__conteneursLiensLogo .liensLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__conteneurInfos__conteneursLiensLogo .liensLogo img {
+  width: 0.6rem;
+  height: 0.9rem;
+}
+.footer__conteneurInfos__conteneursLiensLogo .liensLogo h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+.footer__conteneurInfos__conteneursLiens {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .footer__conteneurInfos__conteneursLiens {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=style-restaurants.css.map */

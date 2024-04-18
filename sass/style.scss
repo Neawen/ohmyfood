@@ -19,14 +19,10 @@
 
 
 // ------Keyframes---------------------------------------------
-// loader
 @import 'keyframes/loader.scss';
 
 // animation pour rendre le loader insivible
 @import 'keyframes/loader-invisible.scss';
-
-//animation du bouton like
-@import 'keyframes/bouton-like.scss';
 
 
 // -------Modules----------------------------------------------
@@ -43,4 +39,5 @@
 @import 'modules/main-section-accueil.scss';
 @import 'modules/main-section-fonctionnement.scss';
 @import 'modules/main-section-restaurants.scss';
+
 

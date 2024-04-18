@@ -1,0 +1,7 @@
+@mixin texteOverflow {
+    white-space: nowrap;
+    overflow: auto;
+    display: block;
+    text-overflow: ellipsis;
+    width: 100%;
+}

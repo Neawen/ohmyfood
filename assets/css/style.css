@@ -31,8 +31,6 @@ body {
 }
 
 .boutonCoeur {
-  border: none;
-  background-color: white;
   cursor: pointer;
   background-image: url("../images/Icon/like.png");
   height: 1.6rem;
@@ -40,10 +38,31 @@ body {
   background-size: 1.3rem 1.3rem;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
+  z-index: 1;
 }
-.boutonCoeur:hover {
-  animation: liked 0.1s ease-in-out;
+.boutonCoeur:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.boutonCoeur::after {
+  content: "";
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
   background-image: url("../images/Icon/liked.png");
+  height: 1.6rem;
+  width: 1.6rem;
+  background-size: 1.5rem 1.4rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.1s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 @keyframes chargement {
@@ -75,14 +94,6 @@ body {
     height: 0;
     padding: 0;
     margin: 0;
-  }
-}
-@keyframes liked {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 .conteneurChargement {
@@ -285,6 +296,7 @@ body {
 
 .sectionFonctionnement {
   margin-bottom: 5rem;
+  max-width: 100%;
 }
 @media (min-width: 1024px) {
   .sectionFonctionnement {
@@ -303,25 +315,31 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .sectionFonctionnement .conteneurFonctionnement {
     flex-direction: row;
-    gap: 0.5rem;
-    margin-right: 1.3rem;
+    gap: 0rem;
+    width: 96%;
   }
 }
 @media (min-width: 1440px) {
   .sectionFonctionnement .conteneurFonctionnement {
     margin-left: 10rem;
-    margin-right: 13.2rem;
+    width: 74.2%;
   }
 }
 .sectionFonctionnement .conteneurFonctionnement__conteneurCard {
   display: flex;
   align-items: center;
-  width: 100%;
   margin-left: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .sectionFonctionnement .conteneurFonctionnement__conteneurCard {
+    margin-left: 0.8rem;
+    width: 33%;
+  }
 }
 .sectionFonctionnement .conteneurFonctionnement__conteneurCard__numero {
   width: 1.5rem;
@@ -348,7 +366,7 @@ body {
 }
 @media (min-width: 1024px) {
   .sectionFonctionnement .conteneurFonctionnement__conteneurCard__card {
-    width: 90%;
+    width: 100%;
   }
 }
 .sectionFonctionnement .conteneurFonctionnement__conteneurCard__card h3 {

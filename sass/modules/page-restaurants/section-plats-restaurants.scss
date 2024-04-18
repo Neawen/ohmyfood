@@ -16,16 +16,22 @@
     .card {
         @include format-card;
 
-        &__contenu__titre {
-            @include sectionResto-titrecard;
-        }
+        &__contenu {
+            width: 80%;
 
-        &__contenu__texte {
-            @include sectionResto-textecard;
-        }
+            &__titre {
+                @include sectionResto-titrecard;
+                @include texteOverflow;
+            }
 
-        &__contenu__prix {
-            @include sectionResto-prixcard;
+            &__texte {
+                @include sectionResto-textecard;
+                @include texteOverflow;
+            }
+
+            &__prix {
+                @include sectionResto-prixcard;
+            }
         }
     }
 }

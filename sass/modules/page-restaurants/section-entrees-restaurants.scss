@@ -15,18 +15,16 @@
             font-family: shrikhand;
             font-size: 1.8rem;
             font-weight: 400;
+            @include texteOverflow;
+
+            &--width {
+                width: auto;
+            }
         }
 
-        &__logo {
-            height: 1.3rem;
-            width: 1.3rem;
+        &__boutonCoeur--bg {
+            background-color: #F6F6F6;
         }
-    }
-
-    button {
-        border: none;
-        background-color: #F6F6F6;
-        cursor: pointer;
     }
 
     &__repas {
@@ -42,19 +40,29 @@
             @include bordure-titre($couleur-tertiaire);
         }
 
+        .card--overflow {
+            @include texteOverflow;
+        }
+
         .card {
             @include format-card;
 
-            &__contenu__titre {
-                @include sectionResto-titrecard;
-            }
+            &__contenu {
+                width: 80%;
 
-            &__contenu__texte {
-                @include sectionResto-textecard;
-            }
+                &__titre {
+                    @include sectionResto-titrecard;
+                    @include texteOverflow;
+                }
 
-            &__contenu__prix {
-                @include sectionResto-prixcard;
+                &__texte {
+                    @include sectionResto-textecard;
+                    @include texteOverflow;
+                }
+
+                &__prix {
+                    @include sectionResto-prixcard;
+                }
             }
         }
     }

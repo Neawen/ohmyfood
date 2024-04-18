@@ -15,17 +15,24 @@
     .card {
         @include format-card;
 
-        &__contenu__titre {
-            @include sectionResto-titrecard;
+        &__contenu {
+            width: 80%;
+
+            &__titre {
+                @include sectionResto-titrecard;
+                @include texteOverflow;
+            }
+
+            &__texte {
+                @include sectionResto-textecard;
+                @include texteOverflow;
+            }
+
+            &__prix {
+                @include sectionResto-prixcard;
+            }
         }
 
-        &__contenu__texte {
-            @include sectionResto-textecard;
-        }
-
-        &__contenu__prix {
-            @include sectionResto-prixcard;
-        }
     }
 
     &__conteneurBouton {
