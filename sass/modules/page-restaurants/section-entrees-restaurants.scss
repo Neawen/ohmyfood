@@ -5,6 +5,7 @@
     position: absolute;
     top: 18.7rem;
     width: 93.5%;
+    height: 24rem;
 
     &__accueil {
         display: flex;
@@ -46,6 +47,7 @@
 
         .card {
             @include format-card;
+            animation: apparition 0.6s 0.2s ease-in-out;
 
             &__contenu {
                 width: 80%;
@@ -53,15 +55,18 @@
                 &__titre {
                     @include sectionResto-titrecard;
                     @include texteOverflow;
+                    animation: apparition 0.6s 0.2s ease-in-out;
                 }
 
                 &__texte {
                     @include sectionResto-textecard;
                     @include texteOverflow;
+                    animation: apparition 0.6s 0.2s ease-in-out;
                 }
 
                 &__prix {
                     @include sectionResto-prixcard;
+                    animation: apparition 0.6s 0.2s ease-in-out;
                 }
             }
         }

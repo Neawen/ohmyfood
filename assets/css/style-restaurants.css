@@ -8,6 +8,17 @@ body {
   margin: 0;
 }
 
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .bouton {
   background: linear-gradient(-180deg, #e972da, #a35bdc);
   color: white;
@@ -94,6 +105,7 @@ body {
   position: absolute;
   top: 18.7rem;
   width: 93.5%;
+  height: 24rem;
 }
 .sectionEntrees__accueil {
   display: flex;
@@ -145,6 +157,7 @@ body {
   align-items: flex-end;
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
+  animation: apparition 0.6s 0.2s ease-in-out;
 }
 .sectionEntrees__repas .card__contenu {
   width: 80%;
@@ -158,6 +171,7 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
+  animation: apparition 0.6s 0.2s ease-in-out;
 }
 .sectionEntrees__repas .card__contenu__texte {
   font-size: 0.9rem;
@@ -168,12 +182,14 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
+  animation: apparition 0.6s 0.2s ease-in-out;
 }
 .sectionEntrees__repas .card__contenu__prix {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
   margin: 0;
+  animation: apparition 0.6s 0.2s ease-in-out;
 }
 
 .sectionPlats {
@@ -183,6 +199,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  height: 18rem;
 }
 .sectionPlats h2 {
   font-size: 1rem;
@@ -201,6 +218,7 @@ body {
   align-items: flex-end;
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
+  animation: apparition 0.6s 0.8s ease-in-out backwards;
 }
 .sectionPlats .card__contenu {
   width: 80%;
@@ -214,6 +232,7 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
+  animation: apparition 0.6s 0.8s ease-in-out backwards;
 }
 .sectionPlats .card__contenu__texte {
   font-size: 0.9rem;
@@ -224,12 +243,14 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
+  animation: apparition 0.6s 0.8s ease-in-out backwards;
 }
 .sectionPlats .card__contenu__prix {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
   margin: 0;
+  animation: apparition 0.6s 0.8s ease-in-out backwards;
 }
 
 .sectionDesserts {
@@ -238,6 +259,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  height: 26rem;
 }
 .sectionDesserts h2 {
   font-size: 1rem;
@@ -256,6 +278,7 @@ body {
   align-items: flex-end;
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
+  animation: apparition 0.6s 1.4s ease-in-out backwards;
 }
 .sectionDesserts .card__contenu {
   width: 80%;
@@ -269,6 +292,7 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
+  animation: apparition 0.6s 1.4s ease-in-out backwards;
 }
 .sectionDesserts .card__contenu__texte {
   font-size: 0.9rem;
@@ -279,12 +303,14 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
+  animation: apparition 0.6s 1.4s ease-in-out backwards;
 }
 .sectionDesserts .card__contenu__prix {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
   margin: 0;
+  animation: apparition 0.6s 1.4s ease-in-out backwards;
 }
 .sectionDesserts__conteneurBouton {
   margin: 1.5rem 0 0.4rem 0;
