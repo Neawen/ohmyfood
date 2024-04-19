@@ -15,7 +15,8 @@
         width: 13.6rem;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
         opacity: 0.85;
         box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.4);
     }

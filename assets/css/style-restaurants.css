@@ -36,7 +36,7 @@ body {
     width: 13.6rem;
   }
 }
-.bouton:hover {
+.bouton:hover, .bouton:active {
   opacity: 0.85;
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.4);
 }
@@ -52,7 +52,7 @@ body {
   position: relative;
   z-index: 1;
 }
-.boutonCoeur:hover::after {
+.boutonCoeur:hover::after, .boutonCoeur:active::after {
   transform: scaleX(1);
   opacity: 1;
 }
@@ -98,7 +98,11 @@ body {
      object-fit: cover;
 }
 
-.sectionEntrees {
+.conteneur {
+  display: flex;
+  justify-content: center;
+}
+.conteneur .sectionEntrees {
   border-radius: 2rem 2rem 0 0;
   padding: 0.8rem 0.8rem 1.9rem 0.8rem;
   background-color: #F6F6F6;
@@ -107,12 +111,21 @@ body {
   width: 93.5%;
   height: 24rem;
 }
-.sectionEntrees__accueil {
+@media (min-width: 1024px) {
+  .conteneur .sectionEntrees {
+    width: 70.3%;
+    border-radius: 2.5rem 2.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.conteneur .sectionEntrees__accueil {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
-.sectionEntrees__accueil__titre {
+.conteneur .sectionEntrees__accueil__titre {
   font-family: shrikhand;
   font-size: 1.8rem;
   font-weight: 400;
@@ -122,34 +135,39 @@ body {
   text-overflow: ellipsis;
   width: 100%;
 }
-.sectionEntrees__accueil__titre--width {
+.conteneur .sectionEntrees__accueil__titre--width {
   width: auto;
 }
-.sectionEntrees__accueil__boutonCoeur--bg {
+.conteneur .sectionEntrees__accueil__boutonCoeur--bg {
   background-color: #F6F6F6;
 }
-.sectionEntrees__repas {
+.conteneur .sectionEntrees__repas {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
-.sectionEntrees__repas h2 {
+@media (min-width: 1024px) {
+  .conteneur .sectionEntrees__repas {
+    width: 62.5%;
+  }
+}
+.conteneur .sectionEntrees__repas h2 {
   font-size: 1rem;
   font-weight: 300;
   margin: 0 0 0.4rem 0;
 }
-.sectionEntrees__repas .bordure {
+.conteneur .sectionEntrees__repas .bordure {
   border-bottom: #99E2D0 solid 3px;
   padding-bottom: 0.3rem;
 }
-.sectionEntrees__repas .card--overflow {
+.conteneur .sectionEntrees__repas .card--overflow {
   white-space: nowrap;
   overflow: auto;
   display: block;
   text-overflow: ellipsis;
   width: 100%;
 }
-.sectionEntrees__repas .card {
+.conteneur .sectionEntrees__repas .card {
   background-color: white;
   border-radius: 1rem;
   display: flex;
@@ -159,10 +177,10 @@ body {
   padding: 1rem 0 1rem 1rem;
   animation: apparition 0.6s 0.2s ease-in-out;
 }
-.sectionEntrees__repas .card__contenu {
+.conteneur .sectionEntrees__repas .card__contenu {
   width: 80%;
 }
-.sectionEntrees__repas .card__contenu__titre {
+.conteneur .sectionEntrees__repas .card__contenu__titre {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0 0 0.3rem 0;
@@ -173,7 +191,7 @@ body {
   width: 100%;
   animation: apparition 0.6s 0.2s ease-in-out;
 }
-.sectionEntrees__repas .card__contenu__texte {
+.conteneur .sectionEntrees__repas .card__contenu__texte {
   font-size: 0.9rem;
   font-weight: 300;
   margin: 0;
@@ -184,7 +202,7 @@ body {
   width: 100%;
   animation: apparition 0.6s 0.2s ease-in-out;
 }
-.sectionEntrees__repas .card__contenu__prix {
+.conteneur .sectionEntrees__repas .card__contenu__prix {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
@@ -192,10 +210,10 @@ body {
   animation: apparition 0.6s 0.2s ease-in-out;
   transition: margin-right 0.4s ease-in-out;
 }
-.sectionEntrees__repas .card__conteneurCheck {
+.conteneur .sectionEntrees__repas .card__conteneurCheck {
   position: relative;
 }
-.sectionEntrees__repas .card__conteneurCheck::after {
+.conteneur .sectionEntrees__repas .card__conteneurCheck::after {
   content: "";
   position: absolute;
   right: 0;
@@ -212,13 +230,13 @@ body {
   transition: transform 0.4s ease-in-out;
   transform: scaleX(0);
 }
-.sectionEntrees__repas .card:hover .card__contenu, .sectionEntrees__repas .card:active .card__contenu {
+.conteneur .sectionEntrees__repas .card:hover .card__contenu, .conteneur .sectionEntrees__repas .card:active .card__contenu {
   width: 63.7%;
 }
-.sectionEntrees__repas .card:hover .card__contenu__prix, .sectionEntrees__repas .card:active .card__contenu__prix {
+.conteneur .sectionEntrees__repas .card:hover .card__contenu__prix, .conteneur .sectionEntrees__repas .card:active .card__contenu__prix {
   margin-right: 4.6rem;
 }
-.sectionEntrees__repas .card:hover .card__conteneurCheck::after, .sectionEntrees__repas .card:active .card__conteneurCheck::after {
+.conteneur .sectionEntrees__repas .card:hover .card__conteneurCheck::after, .conteneur .sectionEntrees__repas .card:active .card__conteneurCheck::after {
   transform: scaleX(1);
 }
 
