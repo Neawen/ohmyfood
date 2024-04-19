@@ -47,7 +47,7 @@ body {
 }
 .boutonCoeur::after {
   content: "";
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -101,13 +101,6 @@ body {
   padding: 3rem;
   animation: invisible 0.5s 2.5s ease-in-out forwards;
 }
-@media (min-width: 1024px) {
-  .conteneurChargement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .conteneurChargement h2 {
   margin: 0.1rem;
   font-weight: 400;
@@ -122,11 +115,6 @@ body {
   margin-top: 2rem;
   padding: 0.2rem;
   animation: invisible 0.5s 2.5s ease-in-out forwards;
-}
-@media (min-width: 1024px) {
-  .conteneurChargement .progress {
-    width: 45%;
-  }
 }
 .conteneurChargement .progress__bar {
   background-color: #e972da;
