@@ -272,6 +272,9 @@ body {
 .conteneur .sectionEntrees__repas .card:hover .card__conteneurCheck::after, .conteneur .sectionEntrees__repas .card:active .card__conteneurCheck::after {
   transform: scaleX(1);
 }
+.conteneur .sectionEntrees--padding {
+  padding-bottom: 7.5rem;
+}
 
 .conteneur {
   display: flex;
@@ -387,6 +390,9 @@ body {
 }
 .conteneur .sectionPlats .card:hover .card__conteneurCheck::after, .conteneur .sectionPlats .card:active .card__conteneurCheck::after {
   transform: scaleX(1);
+}
+.conteneur .sectionPlats--margin {
+  margin-top: 29.5rem;
 }
 
 .conteneur {

@@ -1,8 +1,17 @@
 // ---------bar de chargement----------------------------------
 .conteneurChargement {
     height: 1080px;
-    padding: 3rem;
+    padding: 3rem 0;
+    width: 97.5%;
     animation: invisible 0.5s 2.5s ease-in-out forwards;
+
+    @media (min-width:768px) {
+        width: 98.5%;
+    }
+
+    @media (min-width:1440px) {
+        width: 99.2%;
+    }
 
     h2 {
         margin: 0.1rem;
