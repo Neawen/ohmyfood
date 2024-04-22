@@ -10,6 +10,10 @@
         width: 93.5%;
         height: 24rem;
 
+        @media (min-width:768px) {
+            width: 96.8%;
+        }
+
         @media (min-width:1024px) {
             width: 70.3%;
             border-radius: 2.8rem 2.8rem 0 0;

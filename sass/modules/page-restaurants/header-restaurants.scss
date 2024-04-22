@@ -2,11 +2,18 @@
     display: flex;
     align-items: center;
     padding: 0.7rem 1.2rem;
-    gap: 4rem;
+    gap: 23%;
+
+    @media (min-width:768px) {
+        gap: 38%;
+    }
 
     @media (min-width:1024px) {
         padding: 2rem 1.5rem;
-        gap: 41%;
+    }
+    
+    @media (min-width:1440px) {
+        gap: 41.5%;
     }
 
     &__logo {

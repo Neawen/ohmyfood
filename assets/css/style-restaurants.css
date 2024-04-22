@@ -80,12 +80,21 @@ body {
   display: flex;
   align-items: center;
   padding: 0.7rem 1.2rem;
-  gap: 4rem;
+  gap: 23%;
+}
+@media (min-width: 768px) {
+  .header {
+    gap: 38%;
+  }
 }
 @media (min-width: 1024px) {
   .header {
     padding: 2rem 1.5rem;
-    gap: 41%;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    gap: 41.5%;
   }
 }
 .header__logo {
@@ -128,6 +137,11 @@ body {
   top: 18.7rem;
   width: 93.5%;
   height: 24rem;
+}
+@media (min-width: 768px) {
+  .conteneur .sectionEntrees {
+    width: 96.8%;
+  }
 }
 @media (min-width: 1024px) {
   .conteneur .sectionEntrees {
@@ -271,6 +285,12 @@ body {
   flex-direction: column;
   gap: 0.8rem;
   height: 18rem;
+  width: 93.5%;
+}
+@media (min-width: 768px) {
+  .conteneur .sectionPlats {
+    width: 96.8%;
+  }
 }
 @media (min-width: 1024px) {
   .conteneur .sectionPlats {
@@ -380,6 +400,12 @@ body {
   flex-direction: column;
   gap: 0.8rem;
   height: 24.3rem;
+  width: 93.5%;
+}
+@media (min-width: 768px) {
+  .conteneur .sectionDesserts {
+    width: 96.8%;
+  }
 }
 @media (min-width: 1024px) {
   .conteneur .sectionDesserts {
