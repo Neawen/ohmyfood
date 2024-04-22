@@ -122,7 +122,7 @@ body {
 }
 .conteneur .sectionEntrees {
   border-radius: 2rem 2rem 0 0;
-  padding: 0.8rem 0.8rem 1.9rem 0.8rem;
+  padding: 0.8rem 0.8rem 2.1rem 0.8rem;
   background-color: #F6F6F6;
   position: absolute;
   top: 18.7rem;
@@ -259,25 +259,39 @@ body {
   transform: scaleX(1);
 }
 
-.sectionPlats {
+.conteneur {
+  display: flex;
+  justify-content: center;
+}
+.conteneur .sectionPlats {
   margin-top: 23.9rem;
-  padding: 0.8rem 0.8rem 1.9rem 0.8rem;
+  padding: 0.8rem 0.8rem 2.1rem 0.8rem;
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   height: 18rem;
 }
-.sectionPlats h2 {
+@media (min-width: 1024px) {
+  .conteneur .sectionPlats {
+    width: 70.3%;
+  }
+}
+.conteneur .sectionPlats h2 {
   font-size: 1rem;
   font-weight: 300;
   margin: 0 0 0.4rem 0;
 }
-.sectionPlats .bordure {
+@media (min-width: 1024px) {
+  .conteneur .sectionPlats h2 {
+    margin-left: 18.8%;
+  }
+}
+.conteneur .sectionPlats .bordure {
   border-bottom: #99E2D0 solid 3px;
   padding-bottom: 0.3rem;
 }
-.sectionPlats .card {
+.conteneur .sectionPlats .card {
   background-color: white;
   border-radius: 1rem;
   display: flex;
@@ -287,10 +301,15 @@ body {
   padding: 1rem 0 1rem 1rem;
   animation: apparition 0.6s 0.8s ease-in-out backwards;
 }
-.sectionPlats .card__contenu {
+@media (min-width: 1024px) {
+  .conteneur .sectionPlats .card {
+    margin: 0 18.8%;
+  }
+}
+.conteneur .sectionPlats .card__contenu {
   width: 80%;
 }
-.sectionPlats .card__contenu__titre {
+.conteneur .sectionPlats .card__contenu__titre {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0 0 0.3rem 0;
@@ -301,7 +320,7 @@ body {
   width: 100%;
   animation: apparition 0.6s 0.8s ease-in-out backwards;
 }
-.sectionPlats .card__contenu__texte {
+.conteneur .sectionPlats .card__contenu__texte {
   font-size: 0.9rem;
   font-weight: 300;
   margin: 0;
@@ -312,7 +331,7 @@ body {
   width: 100%;
   animation: apparition 0.6s 0.8s ease-in-out backwards;
 }
-.sectionPlats .card__contenu__prix {
+.conteneur .sectionPlats .card__contenu__prix {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
@@ -320,10 +339,10 @@ body {
   animation: apparition 0.6s 0.8s ease-in-out backwards;
   transition: margin-right 0.4s ease-in-out;
 }
-.sectionPlats .card__conteneurCheck {
+.conteneur .sectionPlats .card__conteneurCheck {
   position: relative;
 }
-.sectionPlats .card__conteneurCheck::after {
+.conteneur .sectionPlats .card__conteneurCheck::after {
   content: "";
   position: absolute;
   right: 0;
@@ -340,34 +359,48 @@ body {
   transition: transform 0.4s ease-in-out;
   transform: scaleX(0);
 }
-.sectionPlats .card:hover .card__contenu, .sectionPlats .card:active .card__contenu {
+.conteneur .sectionPlats .card:hover .card__contenu, .conteneur .sectionPlats .card:active .card__contenu {
   width: 63.7%;
 }
-.sectionPlats .card:hover .card__contenu__prix, .sectionPlats .card:active .card__contenu__prix {
+.conteneur .sectionPlats .card:hover .card__contenu__prix, .conteneur .sectionPlats .card:active .card__contenu__prix {
   margin-right: 4.6rem;
 }
-.sectionPlats .card:hover .card__conteneurCheck::after, .sectionPlats .card:active .card__conteneurCheck::after {
+.conteneur .sectionPlats .card:hover .card__conteneurCheck::after, .conteneur .sectionPlats .card:active .card__conteneurCheck::after {
   transform: scaleX(1);
 }
 
-.sectionDesserts {
-  padding: 0.8rem 0.8rem 1.9rem 0.8rem;
+.conteneur {
+  display: flex;
+  justify-content: center;
+}
+.conteneur .sectionDesserts {
+  padding: 0.8rem 0.8rem 2.1rem 0.8rem;
   background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  height: 26rem;
+  height: 24.3rem;
 }
-.sectionDesserts h2 {
+@media (min-width: 1024px) {
+  .conteneur .sectionDesserts {
+    width: 70.3%;
+  }
+}
+.conteneur .sectionDesserts h2 {
   font-size: 1rem;
   font-weight: 300;
   margin: 0 0 0.4rem 0;
 }
-.sectionDesserts .bordure {
+@media (min-width: 1024px) {
+  .conteneur .sectionDesserts h2 {
+    margin-left: 18.8%;
+  }
+}
+.conteneur .sectionDesserts .bordure {
   border-bottom: #99E2D0 solid 3px;
   padding-bottom: 0.3rem;
 }
-.sectionDesserts .card {
+.conteneur .sectionDesserts .card {
   background-color: white;
   border-radius: 1rem;
   display: flex;
@@ -377,10 +410,15 @@ body {
   padding: 1rem 0 1rem 1rem;
   animation: apparition 0.6s 1.4s ease-in-out backwards;
 }
-.sectionDesserts .card__contenu {
+@media (min-width: 1024px) {
+  .conteneur .sectionDesserts .card {
+    margin: 0 18.8%;
+  }
+}
+.conteneur .sectionDesserts .card__contenu {
   width: 80%;
 }
-.sectionDesserts .card__contenu__titre {
+.conteneur .sectionDesserts .card__contenu__titre {
   font-size: 1.1rem;
   font-weight: 500;
   margin: 0 0 0.3rem 0;
@@ -391,7 +429,7 @@ body {
   width: 100%;
   animation: apparition 0.6s 1.4s ease-in-out backwards;
 }
-.sectionDesserts .card__contenu__texte {
+.conteneur .sectionDesserts .card__contenu__texte {
   font-size: 0.9rem;
   font-weight: 300;
   margin: 0;
@@ -402,7 +440,7 @@ body {
   width: 100%;
   animation: apparition 0.6s 1.4s ease-in-out backwards;
 }
-.sectionDesserts .card__contenu__prix {
+.conteneur .sectionDesserts .card__contenu__prix {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
@@ -410,10 +448,10 @@ body {
   animation: apparition 0.6s 1.4s ease-in-out backwards;
   transition: margin-right 0.4s ease-in-out;
 }
-.sectionDesserts .card__conteneurCheck {
+.conteneur .sectionDesserts .card__conteneurCheck {
   position: relative;
 }
-.sectionDesserts .card__conteneurCheck::after {
+.conteneur .sectionDesserts .card__conteneurCheck::after {
   content: "";
   position: absolute;
   right: 0;
@@ -430,17 +468,17 @@ body {
   transition: transform 0.4s ease-in-out;
   transform: scaleX(0);
 }
-.sectionDesserts .card:hover .card__contenu, .sectionDesserts .card:active .card__contenu {
+.conteneur .sectionDesserts .card:hover .card__contenu, .conteneur .sectionDesserts .card:active .card__contenu {
   width: 63.7%;
 }
-.sectionDesserts .card:hover .card__contenu__prix, .sectionDesserts .card:active .card__contenu__prix {
+.conteneur .sectionDesserts .card:hover .card__contenu__prix, .conteneur .sectionDesserts .card:active .card__contenu__prix {
   margin-right: 4.6rem;
 }
-.sectionDesserts .card:hover .card__conteneurCheck::after, .sectionDesserts .card:active .card__conteneurCheck::after {
+.conteneur .sectionDesserts .card:hover .card__conteneurCheck::after, .conteneur .sectionDesserts .card:active .card__conteneurCheck::after {
   transform: scaleX(1);
 }
-.sectionDesserts__conteneurBouton {
-  margin: 1.5rem 0 0.4rem 0;
+.conteneur .sectionDesserts__conteneurBouton {
+  margin: 1.8rem 0 0.4rem 0;
   display: flex;
   justify-content: center;
 }
