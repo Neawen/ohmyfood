@@ -28,16 +28,12 @@
 // -------Modules----------------------------------------------
 //barre de chargement
 @import 'modules/section-loader.scss';
-
 @import 'modules/header.scss';
-
-@import 'modules/footer.scss';
-
-
-//------Fichier CSS---------------------------------------
-// sections page principale
 @import 'modules/main-section-accueil.scss';
 @import 'modules/main-section-fonctionnement.scss';
 @import 'modules/main-section-restaurants.scss';
+@import 'modules/footer.scss';
+
+
 
 

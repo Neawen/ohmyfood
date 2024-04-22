@@ -172,81 +172,6 @@ body {
   height: 1rem;
 }
 
-.footer {
-  background-color: #353535;
-  color: white;
-  padding: 1rem 1.5rem;
-}
-@media (min-width: 1024px) {
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    gap: 5.8rem;
-    padding: 3.2rem 3.8rem 1.5rem 1.5rem;
-  }
-}
-.footer h2 {
-  margin-top: 0;
-  font-family: shrikhand;
-  font-size: 1.2rem;
-}
-@media (min-width: 1024px) {
-  .footer h2 {
-    margin: 0;
-  }
-}
-.footer__conteneurInfos {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-@media (min-width: 1024px) {
-  .footer__conteneurInfos {
-    flex-direction: row;
-    gap: 3rem;
-  }
-}
-.footer__conteneurInfos a {
-  text-decoration: none;
-  color: white;
-}
-.footer__conteneurInfos__conteneursLiensLogo {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-@media (min-width: 1024px) {
-  .footer__conteneurInfos__conteneursLiensLogo {
-    flex-direction: row;
-  }
-}
-.footer__conteneurInfos__conteneursLiensLogo .liensLogo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.footer__conteneurInfos__conteneursLiensLogo .liensLogo img {
-  width: 0.6rem;
-  height: 0.9rem;
-}
-.footer__conteneurInfos__conteneursLiensLogo .liensLogo h3 {
-  font-weight: 500;
-  font-size: 1rem;
-  margin: 0;
-}
-.footer__conteneurInfos__conteneursLiens {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-@media (min-width: 1024px) {
-  .footer__conteneurInfos__conteneursLiens {
-    flex-direction: row;
-    gap: 1rem;
-  }
-}
-
 .sectionAccueil {
   display: flex;
   flex-direction: column;
@@ -316,6 +241,11 @@ body {
   .sectionFonctionnement .conteneurFonctionnement {
     margin-left: 10rem;
     width: 74.2%;
+  }
+}
+@media (min-width: 1920px) {
+  .sectionFonctionnement .conteneurFonctionnement {
+    width: 78%;
   }
 }
 .sectionFonctionnement .conteneurFonctionnement__conteneurCard {
@@ -458,6 +388,11 @@ body {
     left: 80%;
   }
 }
+@media (min-width: 1920px) {
+  .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__texte {
+    left: 86%;
+  }
+}
 .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__photo, .sectionRestaurants__conteneur__conteneurParDeux .card__photo {
   -o-object-fit: cover;
      object-fit: cover;
@@ -478,4 +413,79 @@ body {
 .sectionRestaurants__conteneur__conteneurParDeux .card__contenu p {
   margin: 0;
   font-weight: 300;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 5.8rem;
+    padding: 3.2rem 3.8rem 1.5rem 1.5rem;
+  }
+}
+.footer h2 {
+  margin-top: 0;
+  font-family: shrikhand;
+  font-size: 1.2rem;
+}
+@media (min-width: 1024px) {
+  .footer h2 {
+    margin: 0;
+  }
+}
+.footer__conteneurInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .footer__conteneurInfos {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+.footer__conteneurInfos a {
+  text-decoration: none;
+  color: white;
+}
+.footer__conteneurInfos__conteneursLiensLogo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .footer__conteneurInfos__conteneursLiensLogo {
+    flex-direction: row;
+  }
+}
+.footer__conteneurInfos__conteneursLiensLogo .liensLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__conteneurInfos__conteneursLiensLogo .liensLogo img {
+  width: 0.6rem;
+  height: 0.9rem;
+}
+.footer__conteneurInfos__conteneursLiensLogo .liensLogo h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+.footer__conteneurInfos__conteneursLiens {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .footer__conteneurInfos__conteneursLiens {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

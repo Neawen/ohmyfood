@@ -32,6 +32,10 @@
             width: 74.2%;
         }
 
+        @media (min-width: 1920px) {
+            width: 78%;
+        }
+
         &__conteneurCard {
             display: flex;
             align-items: center;
