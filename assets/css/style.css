@@ -415,12 +415,18 @@ body {
     left: 86%;
   }
 }
-.sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__photo, .sectionRestaurants__conteneur__conteneurParDeux .card__photo {
+.sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__photo {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.9rem 0.9rem 0 0;
   height: 11rem;
   width: 100%;
+}
+@media (min-width: 1920px) {
+  .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__photo {
+    -o-object-position: 50% 60%;
+       object-position: 50% 60%;
+  }
 }
 .sectionRestaurants__conteneur__conteneurParDeux .card__contenu {
   display: flex;
