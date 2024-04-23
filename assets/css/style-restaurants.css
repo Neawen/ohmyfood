@@ -88,6 +88,11 @@ body {
   padding: 0.7rem 1.2rem;
   gap: 23%;
 }
+@media (max-width: 320px) {
+  .header {
+    gap: 18%;
+  }
+}
 @media (min-width: 768px) {
   .header {
     gap: 38%;
@@ -220,7 +225,7 @@ body {
 }
 @media (max-width: 320px) {
   .conteneur .sectionEntrees__repas .card__contenu {
-    width: 80%;
+    width: 78%;
   }
 }
 .conteneur .sectionEntrees__repas .card__contenu__titre {
@@ -273,10 +278,12 @@ body {
   transition: transform 0.4s ease-in-out;
   transform: scaleX(0);
 }
-@media (min-width: 1024px) {
-  .conteneur .sectionEntrees__repas .card:hover .card__contenu {
-    width: 63.7%;
+@media (max-width: 320px) {
+  .conteneur .sectionEntrees__repas .card__conteneurCheck::after {
+    right: -0.1rem;
   }
+}
+@media (min-width: 1024px) {
   .conteneur .sectionEntrees__repas .card:hover .card__contenu__prix {
     margin-right: 4.6rem;
   }
@@ -286,6 +293,11 @@ body {
 }
 .conteneur .sectionEntrees__repas .card:active .card__contenu {
   width: 63.7%;
+}
+@media (max-width: 320px) {
+  .conteneur .sectionEntrees__repas .card:active .card__contenu {
+    width: 58%;
+  }
 }
 .conteneur .sectionEntrees__repas .card:active .card__contenu__prix {
   margin-right: 4.6rem;
@@ -352,7 +364,7 @@ body {
 }
 @media (max-width: 320px) {
   .conteneur .sectionPlats .card__contenu {
-    width: 80%;
+    width: 78%;
   }
 }
 .conteneur .sectionPlats .card__contenu__titre {
@@ -405,10 +417,12 @@ body {
   transition: transform 0.4s ease-in-out;
   transform: scaleX(0);
 }
-@media (min-width: 1024px) {
-  .conteneur .sectionPlats .card:hover .card__contenu {
-    width: 63.7%;
+@media (max-width: 320px) {
+  .conteneur .sectionPlats .card__conteneurCheck::after {
+    right: -0.1rem;
   }
+}
+@media (min-width: 1024px) {
   .conteneur .sectionPlats .card:hover .card__contenu__prix {
     margin-right: 4.6rem;
   }
@@ -418,6 +432,11 @@ body {
 }
 .conteneur .sectionPlats .card:active .card__contenu {
   width: 63.7%;
+}
+@media (max-width: 320px) {
+  .conteneur .sectionPlats .card:active .card__contenu {
+    width: 58%;
+  }
 }
 .conteneur .sectionPlats .card:active .card__contenu__prix {
   margin-right: 4.6rem;
@@ -483,7 +502,7 @@ body {
 }
 @media (max-width: 320px) {
   .conteneur .sectionDesserts .card__contenu {
-    width: 80%;
+    width: 78%;
   }
 }
 .conteneur .sectionDesserts .card__contenu__titre {
@@ -536,6 +555,11 @@ body {
   transition: transform 0.4s ease-in-out;
   transform: scaleX(0);
 }
+@media (max-width: 320px) {
+  .conteneur .sectionDesserts .card__conteneurCheck::after {
+    right: -0.1rem;
+  }
+}
 @media (min-width: 1024px) {
   .conteneur .sectionDesserts .card:hover .card__contenu {
     width: 63.7%;
@@ -549,6 +573,11 @@ body {
 }
 .conteneur .sectionDesserts .card:active .card__contenu {
   width: 63.7%;
+}
+@media (min-width: 320px) {
+  .conteneur .sectionDesserts .card:active .card__contenu {
+    width: 58%;
+  }
 }
 .conteneur .sectionDesserts .card:active .card__contenu__prix {
   margin-right: 4.6rem;

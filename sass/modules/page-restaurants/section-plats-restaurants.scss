@@ -1,7 +1,7 @@
 .conteneur {
     display: flex;
     justify-content: center;
-    
+
     .sectionPlats {
         margin-top: 23.9rem;
         @include section-resto;
@@ -10,7 +10,7 @@
         gap: 0.8rem;
         height: 18rem;
         width: 93.5%;
-        
+
         @media (min-width:768px) {
             width: 96.8%;
         }
@@ -41,7 +41,7 @@
 
             &__contenu {
                 @media (max-width:320px) {
-                    width: 80%;
+                    width: 78%;
                 }
 
                 &__titre {
@@ -82,17 +82,17 @@
                     transform-origin: right;
                     transition: transform 0.4s ease-in-out;
                     transform: scaleX(0);
+
+                    @media (max-width:320px) {
+                        right: -0.1rem;
+                    }
                 }
             }
-            
+
             &:hover {
                 @media (min-width:1024px) {
-                    .card__contenu {
-                        width: 63.7%;
-
-                        &__prix {
-                            margin-right: 4.6rem;
-                        }
+                    .card__contenu__prix {
+                        margin-right: 4.6rem;
                     }
 
                     .card__conteneurCheck {
@@ -106,6 +106,10 @@
             &:active {
                 .card__contenu {
                     width: 63.7%;
+
+                    @media (max-width:320px) {
+                        width: 58%;
+                    }
 
                     &__prix {
                         margin-right: 4.6rem;

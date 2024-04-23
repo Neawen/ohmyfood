@@ -40,7 +40,7 @@
 
             &__contenu {
                 @media (max-width:320px) {
-                    width: 80%;
+                    width: 78%; 
                 }
                 
                 &__titre {
@@ -81,6 +81,10 @@
                     transform-origin: right;
                     transition: transform 0.4s ease-in-out;
                     transform: scaleX(0);
+
+                    @media (max-width:320px) {
+                        right: -0.1rem;
+                    }
                 }
             }
 
@@ -105,6 +109,10 @@
             &:active {
                 .card__contenu {
                     width: 63.7%;
+
+                    @media (min-width:320px) {
+                        width: 58%;
+                    }
 
                     &__prix {
                         margin-right: 4.6rem;
