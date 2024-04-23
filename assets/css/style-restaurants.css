@@ -11,12 +11,11 @@ body {
 @keyframes apparition {
   0% {
     opacity: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
+    transform: scale(0);
   }
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
 .bouton {
@@ -221,7 +220,7 @@ body {
   align-items: flex-end;
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
   padding: 1rem 0 1rem 1rem;
-  animation: apparition 0.6s 0.4s ease-in-out;
+  animation: apparition 0.6s 0.4s ease-in-out backwards;
 }
 @media (max-width: 320px) {
   .conteneur .sectionEntrees__repas .card__contenu {
@@ -237,7 +236,7 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
-  animation: apparition 0.6s 0.4s ease-in-out;
+  animation: apparition 0.6s 0.4s ease-in-out backwards;
 }
 .conteneur .sectionEntrees__repas .card__contenu__texte {
   font-size: 0.9rem;
@@ -248,14 +247,14 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
-  animation: apparition 0.6s 0.4s ease-in-out;
+  animation: apparition 0.6s 0.4s ease-in-out backwards;
 }
 .conteneur .sectionEntrees__repas .card__contenu__prix {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
   margin: 0 1rem 0 0;
-  animation: apparition 0.6s 0.4s ease-in-out;
+  animation: apparition 0.6s 0.4s ease-in-out backwards;
   transition: margin-right 0.4s ease-in-out;
 }
 .conteneur .sectionEntrees__repas .card__conteneurCheck {
@@ -355,7 +354,7 @@ body {
   align-items: flex-end;
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
   padding: 1rem 0 1rem 1rem;
-  animation: apparition 0.6s 1s ease-in-out;
+  animation: apparition 0.6s 1s ease-in-out backwards;
 }
 @media (min-width: 1024px) {
   .conteneur .sectionPlats .card {
@@ -376,7 +375,7 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
-  animation: apparition 0.6s 1s ease-in-out;
+  animation: apparition 0.6s 1s ease-in-out backwards;
 }
 .conteneur .sectionPlats .card__contenu__texte {
   font-size: 0.9rem;
@@ -387,14 +386,14 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
-  animation: apparition 0.6s 1s ease-in-out;
+  animation: apparition 0.6s 1s ease-in-out backwards;
 }
 .conteneur .sectionPlats .card__contenu__prix {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
   margin: 0 1rem 0 0;
-  animation: apparition 0.6s 1s ease-in-out;
+  animation: apparition 0.6s 1s ease-in-out backwards;
   transition: margin-right 0.4s ease-in-out;
 }
 .conteneur .sectionPlats .card__conteneurCheck {
@@ -493,7 +492,7 @@ body {
   align-items: flex-end;
   box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.1);
   padding: 1rem 0 1rem 1rem;
-  animation: apparition 0.6s 1.6s ease-in-out;
+  animation: apparition 0.6s 1.6s ease-in-out backwards;
 }
 @media (min-width: 1024px) {
   .conteneur .sectionDesserts .card {
@@ -514,7 +513,7 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
-  animation: apparition 0.6s 1.6s ease-in-out;
+  animation: apparition 0.6s 1.6s ease-in-out backwards;
 }
 .conteneur .sectionDesserts .card__contenu__texte {
   font-size: 0.9rem;
@@ -525,14 +524,14 @@ body {
   display: block;
   text-overflow: ellipsis;
   width: 100%;
-  animation: apparition 0.6s 1.6s ease-in-out;
+  animation: apparition 0.6s 1.6s ease-in-out backwards;
 }
 .conteneur .sectionDesserts .card__contenu__prix {
   font-size: 0.9rem;
   font-weight: 700;
   color: #353535;
   margin: 0 1rem 0 0;
-  animation: apparition 0.6s 1.6s ease-in-out;
+  animation: apparition 0.6s 1.6s ease-in-out backwards;
   transition: margin-right 0.4s ease-in-out;
 }
 .conteneur .sectionDesserts .card__conteneurCheck {

@@ -32,7 +32,7 @@
 
         .card {
             @include format-card;
-            animation: apparition 0.6s 1.6s ease-in-out;
+            animation: apparition 0.6s 1.6s ease-in-out backwards;
 
             @media (min-width:1024px) {
                 margin: 0 18.8%;
@@ -46,18 +46,18 @@
                 &__titre {
                     @include sectionResto-titrecard;
                     @include texteOverflow;
-                    animation: apparition 0.6s 1.6s ease-in-out;
+                    animation: apparition 0.6s 1.6s ease-in-out backwards;
                 }
 
                 &__texte {
                     @include sectionResto-textecard;
                     @include texteOverflow;
-                    animation: apparition 0.6s 1.6s ease-in-out;
+                    animation: apparition 0.6s 1.6s ease-in-out backwards;
                 }
 
                 &__prix {
                     @include sectionResto-prixcard;
-                    animation: apparition 0.6s 1.6s ease-in-out;
+                    animation: apparition 0.6s 1.6s ease-in-out backwards;
                     transition: margin-right 0.4s ease-in-out;
                 }
             }
