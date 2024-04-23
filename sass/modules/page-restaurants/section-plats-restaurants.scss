@@ -40,7 +40,9 @@
             }
 
             &__contenu {
-                width: 80%;
+                @media (max-width:320px) {
+                    width: 80%;
+                }
 
                 &__titre {
                     @include sectionResto-titrecard;

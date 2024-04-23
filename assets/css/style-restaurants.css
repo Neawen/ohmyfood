@@ -216,8 +216,10 @@ body {
   padding: 1rem 0 1rem 1rem;
   animation: apparition 0.6s 0.2s ease-in-out;
 }
-.conteneur .sectionEntrees__repas .card__contenu {
-  width: 80%;
+@media (max-width: 320px) {
+  .conteneur .sectionEntrees__repas .card__contenu {
+    width: 80%;
+  }
 }
 .conteneur .sectionEntrees__repas .card__contenu__titre {
   font-size: 1.1rem;
@@ -346,8 +348,10 @@ body {
     margin: 0 18.8%;
   }
 }
-.conteneur .sectionPlats .card__contenu {
-  width: 80%;
+@media (max-width: 320px) {
+  .conteneur .sectionPlats .card__contenu {
+    width: 80%;
+  }
 }
 .conteneur .sectionPlats .card__contenu__titre {
   font-size: 1.1rem;
@@ -475,8 +479,10 @@ body {
     margin: 0 18.8%;
   }
 }
-.conteneur .sectionDesserts .card__contenu {
-  width: 80%;
+@media (max-width: 320px) {
+  .conteneur .sectionDesserts .card__contenu {
+    width: 80%;
+  }
 }
 .conteneur .sectionDesserts .card__contenu__titre {
   font-size: 1.1rem;
