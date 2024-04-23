@@ -276,6 +276,7 @@ body {
   transform-origin: right;
   transition: transform 0.4s ease-in-out;
   transform: scaleX(0);
+  opacity: 0;
 }
 @media (max-width: 320px) {
   .conteneur .sectionEntrees__repas .card__conteneurCheck::after {
@@ -288,6 +289,7 @@ body {
   }
   .conteneur .sectionEntrees__repas .card:hover .card__conteneurCheck::after {
     transform: scaleX(1);
+    opacity: 1;
   }
 }
 .conteneur .sectionEntrees__repas .card:active .card__contenu {
@@ -303,6 +305,7 @@ body {
 }
 .conteneur .sectionEntrees__repas .card:active .card__conteneurCheck::after {
   transform: scaleX(1);
+  opacity: 1;
 }
 .conteneur .sectionEntrees--padding {
   padding-bottom: 7.5rem;
