@@ -9,7 +9,15 @@
     position: relative;
     z-index: 1;
 
-    &:hover,
+    &:hover {
+        @media (min-width:1024px) {
+            &::after {
+                transform: scaleX(1);
+                opacity: 1;
+            }
+        }
+    }
+
     &:active {
         &::after {
             transform: scaleX(1);

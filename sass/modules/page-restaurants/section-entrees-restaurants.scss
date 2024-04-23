@@ -113,7 +113,24 @@
                     }
                 }
 
-                &:hover,
+                &:hover {
+                    @media (min-width:1024px) {
+                        .card__contenu {
+                            width: 63.7%;
+    
+                            &__prix {
+                                margin-right: 4.6rem;
+                            }
+                        }
+    
+                        .card__conteneurCheck {
+                            &::after {
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                }
+
                 &:active {
                     .card__contenu {
                         width: 63.7%;

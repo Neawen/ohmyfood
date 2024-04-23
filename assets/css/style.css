@@ -41,7 +41,13 @@ body {
   position: relative;
   z-index: 1;
 }
-.boutonCoeur:hover::after, .boutonCoeur:active::after {
+@media (min-width: 1024px) {
+  .boutonCoeur:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+.boutonCoeur:active::after {
   transform: scaleX(1);
   opacity: 1;
 }
@@ -388,6 +394,11 @@ body {
   font-weight: 500;
   font-size: 0.8rem;
   border-radius: 0.1rem;
+}
+@media (max-width: 320px) {
+  .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__texte {
+    left: 68%;
+  }
 }
 @media (min-width: 768px) {
   .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__texte {

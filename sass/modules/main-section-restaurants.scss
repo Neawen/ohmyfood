@@ -68,6 +68,10 @@
                         font-size: 0.8rem;
                         border-radius: 0.1rem;
 
+                        @media (max-width:320px) {
+                            left: 68%;
+                        }
+
                         @media (min-width:768px) {
                             left: 87%;
                         }
