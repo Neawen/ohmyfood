@@ -57,6 +57,17 @@
                 &__conteneurPhoto {
                     position: relative;
 
+                    &__photo {
+                        object-fit: cover;
+                        border-radius: 0.9rem 0.9rem 0 0;
+                        height: 11rem;
+                        width: 100%;
+    
+                        @media (min-width:1920px) {
+                            object-position: 50% 60%;
+                        }
+                    }
+
                     &__texte {
                         position: absolute;
                         left: 73%;
@@ -83,17 +94,6 @@
                         @media (min-width:1920px) {
                             left: 86%;
                         }
-                    }
-                }
-
-                &__conteneurPhoto__photo {
-                    object-fit: cover;
-                    border-radius: 0.9rem 0.9rem 0 0;
-                    height: 11rem;
-                    width: 100%;
-
-                    @media (min-width:1920px) {
-                        object-position: 50% 60%;
                     }
                 }
 

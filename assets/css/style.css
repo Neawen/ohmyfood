@@ -41,16 +41,6 @@ body {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 1024px) {
-  .boutonCoeur:hover::after {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
-.boutonCoeur:active::after {
-  transform: scaleX(1);
-  opacity: 1;
-}
 .boutonCoeur::after {
   content: "";
   position: absolute;
@@ -69,6 +59,16 @@ body {
   z-index: -1;
   transform: scale(0);
   transition: transform 0.1s ease-in-out, opacity 0.2s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .boutonCoeur:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+.boutonCoeur:active::after {
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 @keyframes chargement {
@@ -384,6 +384,19 @@ body {
 .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto {
   position: relative;
 }
+.sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.9rem 0.9rem 0 0;
+  height: 11rem;
+  width: 100%;
+}
+@media (min-width: 1920px) {
+  .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__photo {
+    -o-object-position: 50% 60%;
+       object-position: 50% 60%;
+  }
+}
 .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__texte {
   position: absolute;
   left: 73%;
@@ -413,19 +426,6 @@ body {
 @media (min-width: 1920px) {
   .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__texte {
     left: 86%;
-  }
-}
-.sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__photo {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0.9rem 0.9rem 0 0;
-  height: 11rem;
-  width: 100%;
-}
-@media (min-width: 1920px) {
-  .sectionRestaurants__conteneur__conteneurParDeux .card__conteneurPhoto__photo {
-    -o-object-position: 50% 60%;
-       object-position: 50% 60%;
   }
 }
 .sectionRestaurants__conteneur__conteneurParDeux .card__contenu {
