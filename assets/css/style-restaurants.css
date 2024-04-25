@@ -425,6 +425,11 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .conteneur .sectionPlats .card__conteneurCheck::after {
+    right: -0.1rem;
+  }
+}
+@media (min-width: 1024px) {
   .conteneur .sectionPlats .card:hover .card__contenu__prix {
     margin-right: 4.6rem;
   }
@@ -558,6 +563,11 @@ body {
   transform: scaleX(0);
 }
 @media (max-width: 320px) {
+  .conteneur .sectionDesserts .card__conteneurCheck::after {
+    right: -0.1rem;
+  }
+}
+@media (min-width: 1024px) {
   .conteneur .sectionDesserts .card__conteneurCheck::after {
     right: -0.1rem;
   }
