@@ -110,11 +110,17 @@
                         background-repeat: no-repeat;
                         border-radius: 0 1rem 1rem 0;
                         transform-origin: right;
-                        transition: transform 0.4s ease-in-out;
                         transform: scaleX(0);
-                        opacity: 0;
+                        transition: transform 0.4s ease-in-out;
+                        // correction de l'apparition de la coche pendant le chargement des plats
+                        // sur Google Chrome
+                        animation: correctionCheck 1s;
 
                         @media (max-width:320px) {
+                            right: -0.1rem;
+                        }
+
+                        @media (min-width:1024px) {
                             right: -0.1rem;
                         }
                     }
@@ -129,7 +135,6 @@
                         .card__conteneurCheck {
                             &::after {
                                 transform: scaleX(1);
-                                opacity: 1;
                             }
                         }
                     }
@@ -151,7 +156,6 @@
                     .card__conteneurCheck {
                         &::after {
                             transform: scaleX(1);
-                            opacity: 1;
                         }
                     }
                 }

@@ -8,6 +8,14 @@ body {
   margin: 0;
 }
 
+@keyframes correctionCheck {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -274,11 +282,16 @@ body {
   background-repeat: no-repeat;
   border-radius: 0 1rem 1rem 0;
   transform-origin: right;
-  transition: transform 0.4s ease-in-out;
   transform: scaleX(0);
-  opacity: 0;
+  transition: transform 0.4s ease-in-out;
+  animation: correctionCheck 1s;
 }
 @media (max-width: 320px) {
+  .conteneur .sectionEntrees__repas .card__conteneurCheck::after {
+    right: -0.1rem;
+  }
+}
+@media (min-width: 1024px) {
   .conteneur .sectionEntrees__repas .card__conteneurCheck::after {
     right: -0.1rem;
   }
@@ -289,7 +302,6 @@ body {
   }
   .conteneur .sectionEntrees__repas .card:hover .card__conteneurCheck::after {
     transform: scaleX(1);
-    opacity: 1;
   }
 }
 .conteneur .sectionEntrees__repas .card:active .card__contenu {
@@ -305,7 +317,6 @@ body {
 }
 .conteneur .sectionEntrees__repas .card:active .card__conteneurCheck::after {
   transform: scaleX(1);
-  opacity: 1;
 }
 .conteneur .sectionEntrees--padding {
   padding-bottom: 7.5rem;

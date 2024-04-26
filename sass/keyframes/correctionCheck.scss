@@ -1,0 +1,10 @@
+// correction pour la coche check dans la section entrées des restaurants
+@keyframes correctionCheck {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
