@@ -1,14 +1,11 @@
-.sectionPhoto {
-    position: relative;
-    
-    &__photo {
-        height: 17.1rem;
-        width: 100%;
-        object-fit: cover;
+// Bannière de la page restaurant
+.sectionPhoto__photo {
+    height: 17.1rem;
+    width: 100%;
+    object-fit: cover;
 
-        @media (min-width:1024px) {
-            height: 23.9rem;
-            object-position: 50% 60%;
-        }
+    @media (min-width:1024px) {
+        height: 23.9rem;
+        object-position: 50% 60%;
     }
 }

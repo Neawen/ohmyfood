@@ -24,12 +24,14 @@
                 alt="Photo d'un plat dans un restaurant">
         </div>
 
+        <!-- Classe permettant d'aligner la section sur la version ordinateur -->
         <div class="conteneur">
             <section class="sectionEntrees">
                 <div class="sectionEntrees__accueil">
-                    <h1 class="sectionEntrees__accueil__titre sectionEntrees__accueil__titre--width">La palette du goût
-                    </h1>
-                    <div class="boutonCoeur sectionEntrees__accueil__boutonCoeur--bg"></div>
+                    <!-- Classe --width : permet de réctifier la largeur autorisée -->
+                    <h1 class="sectionEntrees__accueil__titre sectionEntrees__accueil__titre--width">
+                        La palette du goût</h1>
+                    <div class="boutonCoeur"></div>
                 </div>
                 <div class="sectionEntrees__repas">
                     <h2><span class="bordure">ENTR</span>ÉES</h2>
@@ -38,6 +40,7 @@
                             <h3 class="card__contenu__titre">Fricassée d'escargots</h3>
                             <p class="card__contenu__texte">Au piment d'Espelette</p>
                         </div>
+                        <!-- Classe permettant d'ajouter un pseudo-élément -->
                         <div class="card__conteneurCheck">
                             <p class="card__contenu__prix">25€</p>
                         </div>
@@ -127,6 +130,7 @@
                         <p class="card__contenu__prix">23€</p>
                     </div>
                 </article>
+                <!-- Classe permettant d'aligner le bouton à l'intérieur -->
                 <div class="sectionDesserts__conteneurBouton">
                     <button class="bouton">Commander</button>
                 </div>
@@ -138,19 +142,22 @@
     <footer class="footer">
         <h2>ohmyfood</h2>
         <article class="footer__conteneurInfos">
+            <!-- Classe utilisée en tant que conteneur les liens avec logo -->
             <div class="footer__conteneurInfos__conteneursLiensLogo">
+                <!-- Classe utilisée en tant que conteneur pour chaque lien contenant un logo -->
                 <a class="liensLogo" href="">
-                    <img class="" src="../assets/images/Icon/couverts.png" alt="Logo de couverts">
-                    <h3 class="">Proposer un restaurant</h3>
+                    <img src="../assets/images/Icon/couverts.png" alt="Logo de couverts">
+                    <h3>Proposer un restaurant</h3>
                 </a>
                 <a class="liensLogo" href="">
-                    <img class="" src="../assets/images/Icon/poignee-mains.png" alt="Logo d'une poignée de mains">
-                    <h3 class="">Devenir partenaire</h3>
+                    <img src="../assets/images/Icon/poignee-mains.png" alt="Logo d'une poignée de mains">
+                    <h3>Devenir partenaire</h3>
                 </a>
             </div>
+            <!-- Classe utilisée en tant que conteneur pour les liens sans logo -->
             <div class="footer__conteneurInfos__conteneursLiens">
-                <a class="conteneurLiens__liens" href="">Mentions légales</a>
-                <a class="conteneurLiens__liens" href="mailto:OHMYFOOD@MAIL.COM">Contact</a>
+                <a href="">Mentions légales</a>
+                <a href="mailto:OHMYFOOD@MAIL.COM">Contact</a>
             </div>
         </article>
     </footer>

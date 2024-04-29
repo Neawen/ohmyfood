@@ -128,9 +128,6 @@ body {
   }
 }
 
-.sectionPhoto {
-  position: relative;
-}
 .sectionPhoto__photo {
   height: 17.1rem;
   width: 100%;
@@ -191,9 +188,6 @@ body {
 .conteneur .sectionEntrees__accueil__titre--width {
   width: auto;
 }
-.conteneur .sectionEntrees__accueil__boutonCoeur--bg {
-  background-color: #F6F6F6;
-}
 .conteneur .sectionEntrees__repas {
   display: flex;
   flex-direction: column;
@@ -212,13 +206,6 @@ body {
 .conteneur .sectionEntrees__repas .bordure {
   border-bottom: #99E2D0 solid 3px;
   padding-bottom: 0.3rem;
-}
-.conteneur .sectionEntrees__repas .card--overflow {
-  white-space: nowrap;
-  overflow: auto;
-  display: block;
-  text-overflow: ellipsis;
-  width: 100%;
 }
 .conteneur .sectionEntrees__repas .card {
   background-color: white;

@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
 
+    // Logo version mobile
     &__logo {
         padding: 0.8rem 0 0.5rem 0;
 
@@ -11,6 +12,7 @@
         }
     }
 
+    // Logo version ordinateur
     &__logo--ordi {
         display: none;
 

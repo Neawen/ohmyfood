@@ -9,6 +9,7 @@
     position: relative;
     z-index: 1;
 
+    // pseudo-élément qui permet d'ajouter le coeur rempli
     &::after {
         content: "";
         position: absolute;

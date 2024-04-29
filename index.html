@@ -10,6 +10,7 @@
 
 <body>
     <section class="conteneurChargement">
+        <!-- Classe utilisée pour créer une bordure autour de la barre de chargement -->
         <div class="progress">
             <div class="progress__bar"></div>
         </div>
@@ -18,6 +19,7 @@
 
     <header class="header">
         <img class="header__logo" src="assets/images/logo/ohmyfood-fondu.png" alt="Logo ohmyfood">
+        <!-- Classe utilisée pour afficher le logo uniquement via les media queries -->
         <img class="header__logo--ordi" src="assets/images/logo/ohmyfood.png" alt="Logo ohmyfood">
         <section class="header__section">
             <img class="header__section__logo" src="assets/images/Icon/localisation.png" alt="Logo de localisation">
@@ -140,19 +142,22 @@
     <footer class="footer">
         <h2>ohmyfood</h2>
         <article class="footer__conteneurInfos">
+            <!-- Classe utilisée en tant que conteneur les liens avec logo -->
             <div class="footer__conteneurInfos__conteneursLiensLogo">
+                <!-- Classe utilisée en tant que conteneur pour chaque lien contenant un logo -->
                 <a class="liensLogo" href="">
-                    <img class="" src="assets/images/Icon/couverts.png" alt="Logo de couverts">
-                    <h3 class="">Proposer un restaurant</h3>
+                    <img src="assets/images/Icon/couverts.png" alt="Logo de couverts">
+                    <h3>Proposer un restaurant</h3>
                 </a>
                 <a class="liensLogo" href="">
-                    <img class="" src="assets/images/Icon/poignee-mains.png" alt="Logo d'une poignée de mains">
-                    <h3 class="">Devenir partenaire</h3>
+                    <img src="assets/images/Icon/poignee-mains.png" alt="Logo d'une poignée de mains">
+                    <h3>Devenir partenaire</h3>
                 </a>
             </div>
+            <!-- Classe utilisée en tant que conteneur pour les liens sans logo -->
             <div class="footer__conteneurInfos__conteneursLiens">
-                <a class="conteneurLiens__liens" href="">Mentions légales</a>
-                <a class="conteneurLiens__liens" href="mailto:OHMYFOOD@MAIL.COM">Contact</a>
+                <a href="">Mentions légales</a>
+                <a href="mailto:OHMYFOOD@MAIL.COM">Contact</a>
             </div>
         </article>
     </footer>

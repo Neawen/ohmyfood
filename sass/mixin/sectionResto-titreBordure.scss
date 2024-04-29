@@ -1,9 +1,11 @@
+// format de tous les titres h2 des sections de la page restaurant
 @mixin sectionResto-titres {
     font-size: 1rem;
     font-weight: 300;
     margin: 0 0 0.4rem 0;
 }
 
+// bout de code pour créer leur bordure qui est ajoutée sur une balise span entourant les quatres premières lettres
 @mixin bordure-titre($couleur-tertiaire) {
     border-bottom: $couleur-tertiaire solid 3px;
     padding-bottom: 0.3rem;

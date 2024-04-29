@@ -36,6 +36,7 @@
             color: white;
         }
 
+        // Conteneur pour les liens avec logo
         &__conteneursLiensLogo {
             display: flex;
             flex-direction: column;
@@ -45,6 +46,7 @@
                 flex-direction: row;
             }
 
+            // Classe conteneur ajoutée à chaque lien qui contient un logo
             .liensLogo {
                 display: flex;
                 align-items: center;
@@ -63,6 +65,7 @@
             }
         }
 
+        // conteneur pour les liens sans logo
         &__conteneursLiens {
             display: flex;
             flex-direction: column;

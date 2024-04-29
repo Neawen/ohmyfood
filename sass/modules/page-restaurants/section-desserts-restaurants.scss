@@ -1,8 +1,11 @@
+// Troisième section de la page restaurant
+// Classe qui permet de gérer l'alignement de la section à l'intérieur
 .conteneur {
     display: flex;
     justify-content: center;
 
     .sectionDesserts {
+        // mixin background-color + padding
         @include section-resto;
         display: flex;
         flex-direction: column;
@@ -19,6 +22,7 @@
         }
 
         h2 {
+            // mixin font-size, font-weight & margin
             @include sectionResto-titres;
 
             @media (min-width:1024px) {
@@ -26,6 +30,8 @@
             }
         }
 
+        // Classe ajouté sur une balise span sur les titres de section afin d'ajouter une bordure 
+        // sur les quatres premières lettres
         .bordure {
             @include bordure-titre($couleur-tertiaire);
         }
@@ -44,18 +50,21 @@
                 }
                 
                 &__titre {
+                    // mixin font-size, font-weight & margin
                     @include sectionResto-titrecard;
                     @include texteOverflow;
                     animation: apparition 0.6s 1.6s ease-in-out backwards;
                 }
 
                 &__texte {
+                    // mixin font-size, font-weight & margin
                     @include sectionResto-textecard;
                     @include texteOverflow;
                     animation: apparition 0.6s 1.6s ease-in-out backwards;
                 }
 
                 &__prix {
+                    //  mixin font-size, font-weight, color & margin
                     @include sectionResto-prixcard;
                     animation: apparition 0.6s 1.6s ease-in-out backwards;
                     transition: margin-right 0.4s ease-in-out;
@@ -65,6 +74,7 @@
             &__conteneurCheck {
                 position: relative;
 
+                // pseudo-élément qui permet d'ajouter la coche check
                 &::after {
                     content: "";
                     position: absolute;

@@ -1,3 +1,5 @@
+// Deuxième section de la page restaurant
+// Classe qui permet de gérer l'alignement de la section
 .conteneur {
     display: flex;
     justify-content: center;
@@ -27,6 +29,8 @@
             }
         }
 
+        // Classe ajouté sur une balise span sur les titres de section afin d'ajouter une bordure 
+        // sur les quatres premières lettres
         .bordure {
             @include bordure-titre($couleur-tertiaire);
         }
@@ -66,6 +70,7 @@
             &__conteneurCheck {
                 position: relative;
 
+                // pseudo-élément qui permet d'ajouter la coche check
                 &::after {
                     content: "";
                     position: absolute;
@@ -129,6 +134,8 @@
         }
     }
 
+    // Classe supplémentaire pour la section Entrées du restaurant La note enchantée qui permet d'ajouter 
+    // de la marge au dessus pour qu'elle ne passe pas en dessous de la section Entrées
     .sectionPlats--margin {
         margin-top: 29.5rem;
     }
